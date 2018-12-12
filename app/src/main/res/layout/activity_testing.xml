@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Testing"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#ccccb3">
+
+
+    <EditText
+        android:id="@+id/zbt"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:hint="@string/z_button"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbt" />
+
+    <EditText
+        android:id="@+id/cbt"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:hint="@string/c_button"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/zbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yax" />
+
+    <EditText
+        android:id="@+id/xax"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/enter_x_axis_here"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/yax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y" />
+
+    <EditText
+        android:id="@+id/yax"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:hint="@string/enter_y_axis_here"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xax" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/send_data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/x"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/enter_x_here"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/y"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_y_here"
+        android:textColor="#ffffff"
+        android:inputType=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/xax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="109dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="clickResults"
+        android:text="@string/results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zbt" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="356dp"
+        android:text="TESTING"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
